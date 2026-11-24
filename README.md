@@ -1,4 +1,4 @@
-Algorithms and Constructs
+## Algorithms and Constructs
 
 You will be required to choose one of the following three organizations (School, Bank or Department Store). Your role will be to analyse and assess the unique challenges, operations, and organizational structure of your chosen entity. You will need to explore its core functions, the environment in which it operates, and the roles of key staff.
 Please refer to the sample text file containing employee information attached in the assessment folder. You may modify the information to suit the organisation you are working for.
