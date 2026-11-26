@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        String filename = args.length > 0 ? args[0] : "data/Applicants_Form - Sample data file for read.txt";
+        String filename = args.length > 0 ? args[0] : "data/Applicants_Form.txt";
         OrganisationModel model = new OrganisationModel();
         OrganisationView view = new OrganisationView();
 

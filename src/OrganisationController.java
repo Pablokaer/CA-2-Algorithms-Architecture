@@ -21,10 +21,12 @@ public class OrganisationController {
 
             switch (option) {
                 case SORT:
-                    view.showMessage("Sort selected.");
+                    model.sortEmployeesRecursive();
+                    view.showMessage("Employees sorted alphabetically. First 20 records:");
+                    view.showEmployees(model.getFirstEmployees(20));
                     break;
                 case SEARCH:
-                    view.showMessage("Search selected.");
+                    searchEmployee();
                     break;
                 case ADD_RECORD:
                     view.showMessage("Add record selected.");
@@ -37,6 +39,18 @@ public class OrganisationController {
                     view.showMessage("Program closed.");
                     break;
             }
+        }
+    }
+
+    private void searchEmployee() {
+        String fullName = view.readText("Enter the employee's full name: ");
+        Employee employee = model.searchEmployeeRecursive(fullName);
+
+        if (employee == null) {
+            view.showMessage("Employee not found.");
+        } else {
+            view.showMessage("Employee found:");
+            view.showMessage(employee.toString());
         }
     }
 }
